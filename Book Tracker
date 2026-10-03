@@ -1,0 +1,8 @@
+choice = ""
+
+while choice == "yes":
+  print("Book Reading Tracker")
+  print("[-------------------]")
+  print("Track the books you read using this program!")
+  choice = input("Would you like to add a book? (yes/no)")
+
