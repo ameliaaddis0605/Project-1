@@ -2,13 +2,19 @@ choice = ""
 book_name = ""
 pages = ""
 hours = ""
+book_list = []
+hours_list= []
+pages_list = []
 while choice != "no":
   print("Book Reading Tracker")
   print("[-------------------]")
   print("Track the books you read using this program!")
   choice = input("Would you like to add a book? (yes/no) ")
   book_name = input("What is the name of the book? ")
-  pages = input ("How many total pages?" )
+  pages = input ("How many total pages? ")
   hours = input ("How many hours did it take to finish? ")
-  print (book_name, pages, hours)
 
+  book_list.append(book_name)
+  pages_list.append(pages)
+  hours_list.append(hours)
+  print ("Name:", book_list, "Pages:", pages_list, "Hours:", hours_list)
