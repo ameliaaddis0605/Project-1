@@ -1,8 +1,14 @@
 choice = ""
-
-while choice == "yes":
+book_name = ""
+pages = ""
+hours = ""
+while choice != "no":
   print("Book Reading Tracker")
   print("[-------------------]")
   print("Track the books you read using this program!")
-  choice = input("Would you like to add a book? (yes/no)")
+  choice = input("Would you like to add a book? (yes/no) ")
+  book_name = input("What is the name of the book? ")
+  pages = input ("How many total pages?" )
+  hours = input ("How many hours did it take to finish? ")
+  print (book_name, pages, hours)
 
