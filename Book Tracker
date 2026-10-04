@@ -5,11 +5,13 @@ hours = ""
 book_list = []
 hours_list= []
 pages_list = []
+
+print("Book Reading Tracker")
+print("[-------------------]")
+print("Track the books you read using this program!")
+choice = input("Would you like to add a book? (yes/no) ")
+
 while choice != "no":
-  print("Book Reading Tracker")
-  print("[-------------------]")
-  print("Track the books you read using this program!")
-  choice = input("Would you like to add a book? (yes/no) ")
   book_name = input("What is the name of the book? ")
   pages = int(input ("How many total pages? "))
   book_list.append(book_name)
@@ -24,5 +26,10 @@ while choice != "no":
   elif fin == "unfinished":
     last_page = int(input("What page number did you leave off on? "))
     pages_left = pages - last_page
-    print ("Name:", book_list, pages_left,"pages left out of", pages_list)  
+    print ("Name:", book_list, pages_left,"pages left out of", pages_list)
+
+  choice = input("Would you like to add another book? (yes/no) ")
+
+else: 
+  print("Current Book List - ", )  
 
