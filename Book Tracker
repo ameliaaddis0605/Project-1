@@ -38,7 +38,15 @@ else:
   for i in range(len(book_list)):
     print("Name:", book_list[i])
     print("Total Pages:", pages_list[i])
-    print("Total Hours:", hours_list[i])
-    
+
+    if hours_list[i] == "Unfisniehd":
+      print("Pages Left:", pages_left_list[i])
+    else:
+      print("Total Hours:", hours_list[i])
+
+    print()
+
+
+
 
 
