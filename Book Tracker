@@ -31,5 +31,11 @@ while choice != "no":
   choice = input("Would you like to add another book? (yes/no) ")
 
 else: 
-  print("Current Book List - ", )  
+  print("\nCurrent Book List - ", )  
+  for i in range(len(book_list)):
+    print("Name:", book_list[i])
+    print("Name:", book_list[i])
+    print("Total Hours:", hours_list[i])
+    print()
+
 
