@@ -27,8 +27,7 @@ while choice != "no":
   elif fin == "unfinished":
     last_page = int(input("What page number did you leave off on? "))
     pages_left = pages - last_page
-    print ("Name:", book_list, pages_left,"pages left out of", pages_list)
-    pages_left_list.appened(pages_left)
+    pages_left_list.append(pages_left)
     hours_list.append("Unfinished")
 
   choice = input("Would you like to add another book? (yes/no) ")
@@ -39,12 +38,14 @@ else:
     print("Name:", book_list[i])
     print("Total Pages:", pages_list[i])
 
-    if hours_list[i] == "Unfisniehd":
+    if hours_list[i] == "Unfinished":
       print("Pages Left:", pages_left_list[i])
     else:
       print("Total Hours:", hours_list[i])
 
     print()
+
+
 
 
 
