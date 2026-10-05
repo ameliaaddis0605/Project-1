@@ -24,6 +24,7 @@ while choice != "no":
     hours = input ("How many hours did it take to finish? ")
     hours_list.append(hours)
     pages_left_list.append(0)
+    last_page_list.append(0)
 
   elif fin == "unfinished":
     last_page = int(input("What page number did you leave off on? "))
@@ -47,8 +48,6 @@ else:
       print("Total Hours:", hours_list[i])
 
     print()
-
-
 
 
 
